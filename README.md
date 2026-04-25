@@ -11,5 +11,6 @@
 대규모 시스템을 설계할 때 마주치는 문제들과 해결 패턴을 정리합니다.
 
 - [사용자 수에 따른 규모 확장성](./system-design/user-based-scalability.md)
+- [개략적인 규모 추정](./system-design/scale-estimation.md)
 - [분산 시스템에서의 유일 ID](./system-design/unique_id.md)
 - [URL 단축기](./system-design/url_shortner.md)
