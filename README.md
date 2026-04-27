@@ -12,5 +12,6 @@
 
 - [사용자 수에 따른 규모 확장성](./system-design/user-based-scalability.md)
 - [개략적인 규모 추정](./system-design/scale-estimation.md)
+- [시스템 설계 면접 공략](./system-design/system-design-interview.md)
 - [분산 시스템에서의 유일 ID](./system-design/unique_id.md)
 - [URL 단축기](./system-design/url_shortner.md)
