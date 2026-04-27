@@ -28,7 +28,7 @@ URL 단축기는 기본적으로 두 개의 엔드포인트가 필요하다.
 
 ## URL 리다이렉션
 
-![client-server-communication](images/url_shortener/client-server-communication.png)
+![client-server-communication](images/url-shortener/client-server-communication.png)
 
 `301`과 `302`는 모두 리다이렉션 응답이지만 다음과 같은 차이가 있다.
 
@@ -53,7 +53,7 @@ URL 단축기는 기본적으로 두 개의 엔드포인트가 필요하다.
 
 리다이렉션 매핑을 해시 테이블(인메모리)로 설계하는 것은 초기 전략으로는 괜찮지만, 메모리는 유한하고 비싸기 때문에 실제 시스템에 쓰기에는 곤란하다. 따라서 `<단축 URL, 원본 URL>` 쌍을 **관계형 데이터베이스**에 저장하는 방식을 떠올릴 수 있다.
 
-![url-table](images/url_shortener/url-table.png)
+![url-table](images/url-shortener/url-table.png)
 
 ### 2. 해시 함수 길이
 
@@ -61,7 +61,7 @@ URL 단축기는 기본적으로 두 개의 엔드포인트가 필요하다.
 
 요구사항의 레코드 수인 3,650억 개를 모두 표현할 수 있어야 하므로, $62^n \geq 3{,}650\text{억}$을 만족하는 $n$의 최솟값을 찾는다.
 
-![url-count](images/url_shortener/url-count.png)
+![url-count](images/url-shortener/url-count.png)
 
 $n = 7$이면 약 3.5조 개의 URL을 표현할 수 있으므로, **`hashValue`의 길이는 7로 설정**하면 충분하다.
 
@@ -93,11 +93,11 @@ base-62의 62진법은 `hashValue`에 사용할 수 있는 문자의 개수가 6
 - **신규 생성 플로우**: 입력(`longURL`) → DB에 해당 URL 조회 → 존재하지 않음 → **유일한 ID 생성** 후 DB 기본 키로 사용 → 62진법을 적용해 ID를 단축 URL로 변환 → 클라이언트에 전달
 - **조회 플로우**: 입력(`longURL`) → DB에 해당 URL 조회 → 존재함 → DB에서 해당 단축 URL을 가져와서 클라이언트에 전달
 
-여기서 "유일한 ID 생성"은 [유일 ID 생성기](./unique_id.md)에서 다룬 Snowflake, 티켓 서버 등의 방식을 활용할 수 있다.
+여기서 "유일한 ID 생성"은 [유일 ID 생성기](./unique-id.md)에서 다룬 Snowflake, 티켓 서버 등의 방식을 활용할 수 있다.
 
 #### 3-3. 두 접근법 비교
 
-![comparison](images/url_shortener/comparison.png)
+![comparison](images/url-shortener/comparison.png)
 
 
 ## 나의 생각
