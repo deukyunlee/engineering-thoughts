@@ -14,3 +14,4 @@
 
 - [분산 시스템에서의 유일 ID](./unique-id.md)
 - [URL 단축기](./url-shortener.md)
+- [처리율 제한 장치](./rate-limiter.md)
