@@ -83,7 +83,7 @@
 
 정적 콘텐츠를 전송하는 데 쓰이는, 지리적으로 분산된 서버의 네트워크다. 이미지, 비디오, CSS, JavaScript 등을 캐시할 수 있다.
 
-![cdn](images/scalability/cdn.png)
+![cdn](images/user-based-scalability/cdn.png)
 
 ## 무상태 계층
 
@@ -131,7 +131,7 @@
 - **유명 인사 문제 (Hotspot Key Problem)**: 특정 샤드에 질의가 집중되어 서버에 과부하가 걸리는 문제다.
 - **조인과 비정규화**: 하나의 DB를 여러 샤드 서버로 쪼개고 나면, 여러 샤드에 걸친 데이터를 조인하기가 어렵다. 이를 해결하기 위해 데이터베이스를 **비정규화**하여 하나의 테이블에서 질의가 끝나도록 설계한다.
 
-![architecture](images/scalability/architecture.png)
+![architecture](images/user-based-scalability/architecture.png)
 
 ## 정리
 
