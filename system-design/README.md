@@ -6,13 +6,13 @@
 
 ### 1. 기초
 
-- [사용자 수에 따른 규모 확장성](./user-based-scalability.md)
-- [개략적인 규모 추정](./scale-estimation.md)
-- [시스템 설계 면접 공략](./system-design-interview.md)
+- [사용자 수에 따른 규모 확장성](./user-based-scalability/user-based-scalability.md)
+- [개략적인 규모 추정](./scale-estimation/scale-estimation.md)
+- [시스템 설계 면접 공략](./system-design-interview/system-design-interview.md)
 
 ### 2. 케이스 스터디
 
-- [안정 해시 설계](./consistent-hash.md)
-- [분산 시스템에서의 유일 ID](./unique-id.md)
-- [URL 단축기](./url-shortener.md)
-- [처리율 제한 장치](./rate-limiter.md)
+- [안정 해시 설계](./consistent-hash/consistent-hash.md)
+- [분산 시스템에서의 유일 ID](./unique-id/unique-id.md)
+- [URL 단축기](./url-shortener/url-shortener.md)
+- [처리율 제한 장치](./rate-limiter/rate-limiter.md)

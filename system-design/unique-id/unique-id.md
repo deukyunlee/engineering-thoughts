@@ -16,7 +16,7 @@
 
 ## 1. 다중 마스터 복제 (Multi-Master Replication)
 
-![multi-master-replication](images/unique-id/multi-master-replication.png)
+![multi-master-replication](images/multi-master-replication.png)
 
 DB의 `auto_increment`를 활용하되, 다음 ID를 1씩 증가시키는 게 아니라 데이터베이스 서버의 수(k)만큼 증가시킨다. DB 수를 늘리면 초당 생성 가능한 ID 수를 늘릴 수 있으므로 규모 확장성 문제는 어느 정도 해결된다.
 
@@ -28,7 +28,7 @@ DB의 `auto_increment`를 활용하되, 다음 ID를 1씩 증가시키는 게 �
 
 ## 2. UUID
 
-![uuid](images/unique-id/uuid.png)
+![uuid](images/uuid.png)
 
 웹 서버마다 128비트짜리 UUID를 만든다. UUID는 충돌 가능성이 지극히 낮다.
 
@@ -45,7 +45,7 @@ DB의 `auto_increment`를 활용하되, 다음 ID를 1씩 증가시키는 게 �
 
 ## 3. 티켓 서버 (Ticket Server)
 
-![ticket-server](images/unique-id/ticket-server.png)
+![ticket-server](images/ticket-server.png)
 
 `auto_increment` 기능을 갖춘 데이터베이스 서버, 즉 티켓 서버를 중앙 집중형으로 하나만 사용한다. Flickr는 분산 기본 키를 만들기 위해 이 기술을 이용했다.
 
@@ -61,7 +61,7 @@ DB의 `auto_increment`를 활용하되, 다음 ID를 1씩 증가시키는 게 �
 
 ## 4. Twitter Snowflake
 
-![snowflake](images/unique-id/snowflake.png)
+![snowflake](images/snowflake.png)
 
 생성하는 ID의 구조를 여러 절(section)로 분리한다.
 

@@ -6,4 +6,4 @@
 
 ## 카테고리
 
-- [System Design](./system-design/) — 대규모 시스템을 설계할 때 마주치는 문제들과 해결 패턴
+- [System Design](./system-design/) - 대규모 시스템을 설계할 때 마주치는 문제들과 해결 패턴

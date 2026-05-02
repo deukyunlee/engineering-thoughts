@@ -55,7 +55,7 @@ serverIndex = hash(key) % N
 
 해시 함수의 출력 공간 $x_0, x_1, \ldots, x_{n-1}$ 을 **원형(ring)으로 구부려** 사용한다.
 
-![hash-ring](images/consistent-hash/hash-ring.png)
+![hash-ring](images/hash-ring.png)
 
 > 참고: 강대명님의 [Consistent Hashing 설명 영상](https://youtu.be/mPB2CZiAkKM?t=3580)
 
@@ -63,7 +63,7 @@ serverIndex = hash(key) % N
 
 균등 분포 해시 함수를 사용해 서버와 키를 같은 링 위에 올려놓고, 키에서 **시계 방향으로 가장 먼저 만나는 서버**에 키를 할당한다.
 
-![consistent-hash](images/consistent-hash/consistent-hash.png)
+![consistent-hash](images/consistent-hash.png)
 
 위 이미지를 예로 들면,
 
@@ -88,7 +88,7 @@ serverIndex = hash(key) % N
 
 ## 가상 노드 (Virtual Node)
 
-![virtual-node](images/consistent-hash/virtual-node.png)
+![virtual-node](images/virtual-node.png)
 
 가상 노드는 **실제 노드(서버)를 가리키는 논리적 노드**다. 하나의 서버를 링 위에 **여러 개의 가상 노드로 표현**해서 분포를 평탄하게 만든다.
 
